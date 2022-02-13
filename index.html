@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Countdown with me</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="part1">
+        <input class="timeDeadline" type="time" required value="00:00" />
+        <input class="dateDeadline" type="date" required />
+        <button id="submit">Choose</button>
+      </div>
+      <div class="part2">
+        <div class="count-down">
+          <div class="box">
+            <div class="days">00</div>
+            <span>days</span>
+          </div>
+          <div class="box">
+            <div class="hours">00</div>
+            <span>hours</span>
+          </div>
+          <div class="box">
+            <div class="minutes">00</div>
+            <span>minutes</span>
+          </div>
+          <div class="box">
+            <div class="seconds">00</div>
+            <span>seconds</span>
+          </div>
+        </div>
+      </div>
+      <audio class="count" src="./10s.mp3" type="audio/mpeg"></audio>
+      <audio class="bday" src="./BDAY.mp3" type="audio/mpeg"></audio>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="./confetti.js"></script>
+  </body>
+</html>
